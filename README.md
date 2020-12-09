@@ -1,2 +1,2 @@
-# HSM---Media_Semestre
+# HSM-Media_Semestre
 Calcula Media Semestre - JAVA
