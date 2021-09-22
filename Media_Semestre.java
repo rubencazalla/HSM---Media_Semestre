@@ -10,7 +10,7 @@
  * Caso o aluno tenha m�dia menor que 8, determine tamb�m a nota m�nima necess�ria para a pontua��o na prova final
  * Para tal, basta subtrair do valor 10,00 o valor da m�dia.
  */
-//TESTE
+
 import java.util.Scanner;
 
 public class Media_Semestre {
