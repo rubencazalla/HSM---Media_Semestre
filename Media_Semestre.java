@@ -1,16 +1,16 @@
-/* criar um programa que permita calcular a média semestral dos alunos.
- * A média semestral é a média aritmética simples das médias bimestrais. 
- * Bimestrais são compostas pelas seguintes atividades: 
+/* criar um programa que permita calcular a mï¿½dia semestral dos alunos.
+ * A mï¿½dia semestral ï¿½ a mï¿½dia aritmï¿½tica simples das mï¿½dias bimestrais. 
+ * Bimestrais sï¿½o compostas pelas seguintes atividades: 
  * prova (peso 3), 
  * projeto (peso 3), 
- * lista de exercícios (2) 
- * contribuição em projetos de software livre/ conclusão de MOOCs recomendados pelo docente (3).
+ * lista de exercï¿½cios (2) 
+ * contribuiï¿½ï¿½o em projetos de software livre/ conclusï¿½o de MOOCs recomendados pelo docente (3).
  * exibir se o aluno foi aprovado ou reprovado
  * aluno deve ser aprovado se obtiver nota igual ou maior que 8
- * Caso o aluno tenha média menor que 8, determine também a nota mínima necessária para a pontuação na prova final
- * Para tal, basta subtrair do valor 10,00 o valor da média.
+ * Caso o aluno tenha mï¿½dia menor que 8, determine tambï¿½m a nota mï¿½nima necessï¿½ria para a pontuaï¿½ï¿½o na prova final
+ * Para tal, basta subtrair do valor 10,00 o valor da mï¿½dia.
  */
-
+//TESTE
 import java.util.Scanner;
 
 public class Media_Semestre {
@@ -35,18 +35,18 @@ public class Media_Semestre {
 		
 		for(y=1;y<=2;y++) {
 			System.out.println("=====================================================");
-			System.out.println("          Notas do "+y+"° Semestre                   ");
+			System.out.println("          Notas do "+y+"ï¿½ Semestre                   ");
 			System.out.println("=====================================================");
 			for(x=1;x<=2;x++){
 				ncont=ncont+1;
-				System.out.println("-------------->"+ncont+"° Bimestre<---------------");
+				System.out.println("-------------->"+ncont+"ï¿½ Bimestre<---------------");
 				System.out.println("Digite a Nota da Prova  ");
 				nota1= dados.nextDouble();
 				System.out.println("Digite a Nota do Projeto");
 				nota2= dados.nextDouble();
 				System.out.println("Digite a Nota do Exercicio");
 				nota3= dados.nextDouble();
-				System.out.println("Digite a Nota do contribuição");
+				System.out.println("Digite a Nota do contribuiï¿½ï¿½o");
 				nota4= dados.nextDouble();	
 				if(x==1){
 					media1= ((nota1*prova)+(nota2*projeto)+(nota3*exercicio)+(nota4*contrib))/(prova+projeto+exercicio+contrib);
@@ -65,8 +65,8 @@ public class Media_Semestre {
 		}
 		
 		System.out.println("#####################################");
-		System.out.println("# Media 1° Semestre: "+Math.round(nSemestre1* 100.0)/100.0);
-		System.out.println("# Media 2° Semestre: "+Math.round(nSemestre2* 100.0)/100.0);
+		System.out.println("# Media 1ï¿½ Semestre: "+Math.round(nSemestre1* 100.0)/100.0);
+		System.out.println("# Media 2ï¿½ Semestre: "+Math.round(nSemestre2* 100.0)/100.0);
 		System.out.println("#####################################");
 		
 		nfinal=((nSemestre1+nSemestre2)/2);
@@ -76,7 +76,7 @@ public class Media_Semestre {
 			System.out.println("Aluno: "+nome+" - foi Aprovado");
 		}else {
 			
-			System.out.println("Necessario para aprovação: "+Math.round((10-nfinal)* 100.0)/100.0);
+			System.out.println("Necessario para aprovaï¿½ï¿½o: "+Math.round((10-nfinal)* 100.0)/100.0);
 			System.out.println("Digite a Nota da Prova Final");
 			nota1= dados.nextDouble();
 			
